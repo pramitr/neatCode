@@ -42,6 +42,7 @@ class AlienDictionary {
 			}
 		}
         
+		// Kahn’s algorithm for Topological Sorting
 		for(int i=0; i<words.length-1; i++){
 			String cur=words[i];
 			String next=words[i+1];
