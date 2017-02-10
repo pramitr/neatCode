@@ -1,6 +1,25 @@
 /**
 
+Given an even number ( greater than 2 ), return two prime numbers whose sum will be equal to given number.
 
+NOTE A solution will always exist as per Goldbach’s conjecture
+
+Example:
+
+
+Input : 4
+Output: 2 + 2 = 4
+
+If there are more than one solutions possible, return the lexicographically smaller solution.
+
+If [a, b] is one solution with a <= b,
+and [c,d] is another solution with c <= d, then
+
+[a, b] < [c, d] 
+
+If a < c OR a==c AND b < d. 
+
+///////////////////////////
 
 I would use the Sieve of Eratosthenes to generate the prime numbers up to the input number.  Then I would iterate over the numbers and see if [current number] and [[input number] - [current number]] are both prime numbers.  If they are both prime numbers, append them to your answer list.
 
