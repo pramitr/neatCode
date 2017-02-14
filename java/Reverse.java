@@ -8,13 +8,13 @@ the original LSB of x eventually becomes the MSB of y
 
 public class Solution {
 	public long reverse(long a) {
-	    long b = 0;
-        for (int i = 0; i < 32; ++i) {
-            b <<= 1;       // make space
-            b |= (a & 1);  // copy LSB of X into Y
-            a >>>= 1;      // shift X right
-        }
-        return b;
+		long b = 0;
+		for (int i = 0; i < 32; ++i) {
+			b <<= 1;       // make space
+            		b |= (a & 1);  // copy LSB of X into Y
+            		a >>>= 1;      // shift X right
+        	}
+        	return b;
 	}
 }
 
