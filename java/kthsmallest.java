@@ -15,10 +15,10 @@ public class Solution {
 	    int pos;
 	    if(k > 0 && k <= right - left + 1){ //if k lies within the range
 	        pos = partition(a,left,right);
-	        if(pos - left == k - 1){
+	        if(k == pos - left + 1){
 	            return a.get(pos);
 	        }
-	        else if(pos - left > k - 1){
+	        else if(k < pos - left + 1){
 	            return kth(a,left,pos-1,k);
 	        }
 	        else {
