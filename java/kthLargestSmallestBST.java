@@ -1,13 +1,13 @@
 /**
 
-Given a binary search tree, write a function kthSmallest to find the kth smallest element in it and a function kthLargest to find the kth largest element in it.
+Write a function kthSmallest to find the kth smallest element in a binary search tree and 
+a function kthLargest to find the kth largest element in the binary search tree.
 
 **/
 
 
 
 package com.company;
-
 import java.util.*;
 
 public class Solution {
